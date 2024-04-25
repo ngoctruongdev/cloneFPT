@@ -60,18 +60,24 @@
             </li>
         </ul>
         <ul class="nav-connect">
-            <li (click)="onClick()" class="nav-link nav-link-search" class="nav-list" >
+            <li (click)="toogleTag1()" class="nav-link nav-link-search" class="nav-list" >
                 <i class='nav-link-search bx bx-search'></i>
-                    <div class="nav-connect-hidden" *ngIf="visible" >
-                        <i class='nav-link-search bx bx-search'></i>
-                        <input class="input-search" type="text">
-                    </div>
             </li>
-            <li class="nav-link nav-link-language" class="nav-list">
+            <div *ngIf="showMe" class="nav-connect-show">
+                <div class="nav-connect-hidden" >
+                    <i class='nav-link-search bx bx-search'></i>
+                    <input class="input-search" type="text" placeholder="Nhập để tìm kiếm">
+                </div>
+            </div>
+            <li (click)="toogleTag2()" class="nav-link nav-link-language" class="nav-list">
                 <i class='bx bx-world'></i>
                 <span class="change-language">VI</span>
                 <i class='arrowdown bx bxs-chevron-down'></i>
             </li>
+            <div *ngIf="showlanguage" class="changelanguage">
+                <div class="change-two-language change-two-language-underboder">EN</div>
+                <div class="change-two-language">VN</div>
+            </div>
         </ul>
     </div>
 </div>
