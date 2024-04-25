@@ -1,0 +1,141 @@
+.header{
+    max-width: 1200px;
+    height:76px;
+    margin: 8px auto 0 ;
+}
+.header-nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav-link img{
+    width:80px;
+}
+.nav-link {
+    font-size:15px;
+    text-decoration: none;
+    height:60px;
+}
+.nav-list{
+    display:flex;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+}
+.single-nav-list{
+    position: relative;
+}
+.nav-list li a{
+    line-height:60px;
+    display:block;
+    margin: 0 40px;
+    font-weight:bold;
+    color:#0e1830;
+}
+.nav-connect{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    align-items: center;
+    width: 130px;
+    height:100%;
+    line-height: 26px;
+    font-size:24px;
+    color:#caced0;
+}
+.nav-connect:first-child {
+    display: inline-block;
+}    
+.nav-link-language i,span{
+    margin: 0 8px;
+}
+.nav-link-search{
+    font-weight: bold;
+    position: relative;
+}    
+.change-language{
+    color:#000;
+    font-size: 16px;
+}
+.nav-list:hover{
+    cursor: pointer;
+    color:#fc7321;
+}
+/* introducsion */
+.nav-introduction{
+    width:310px;
+    background-color: #fff;
+    position: absolute;
+    top:100%;
+    left: 0;
+    border: 1px solit ;
+    padding: 13px 30px;
+    border-radius: 0 0 8px 8px;
+    border:1px solid #f1f1f3;
+    display:none;
+}
+.nav-introduction::before{
+    content:"";
+    border: 2px solid #FC7320;
+    border-left-width:100px;
+    position: absolute;
+    left: 12px;
+    top:-5px;
+
+}
+
+.nav-introduction-list{
+    list-style: none;
+    color:#000;
+}
+.introduction-list{
+    font-size: 16px;
+    color:#515769;
+    font-weight:530;
+    margin:15px 0;
+}
+.introduction-list:hover{
+    text-decoration:underline;
+    color:#000;
+}
+.single-nav-list-introduction:hover .nav-introduction{
+    display:block;
+    transform-origin: calc(100% - 20px) left;
+    animation: headerNotice ease 0.2s;
+}
+.single-nav-list-ecosystem:hover .nav-introduction{
+    transform-origin: calc(100% - 20px) left;
+    animation: headerNotice ease 0.2s;
+    display:block;
+}
+.single-nav-list-invertor:hover .nav-introduction{
+    transform-origin: calc(100% - 20px) left;
+    animation: headerNotice ease 0.2s;
+    display:block;
+}
+.single-nav-list-noti:hover .nav-introduction{
+    transform-origin: calc(100% - 20px) left;
+    animation: headerNotice ease 0.2s;
+    display:block;
+}
+.nav-connect-hidden{
+    width:541px;
+    height:93px;
+    position: absolute;
+    right:0;
+    top:100%;
+    background-color: red;
+    z-index: 15;
+}
+/* keyframe */
+@keyframes headerNotice{
+    from{
+        transform:scale(0);
+    }
+    to{
+        transform:scale(1)
+}
+}
+    
+
