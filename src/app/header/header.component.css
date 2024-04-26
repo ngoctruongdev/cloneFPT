@@ -48,9 +48,6 @@
 .nav-connect:first-child {
     display: inline-block;
 }    
-.nav-link-language i,span{
-    margin: 0 8px;
-}
 .nav-link-search{
     font-weight: bold;
     position: relative;
@@ -154,29 +151,19 @@
     color:#fc7321;
 }
 /* change language */
-.changelanguage{
-    background-color: #ffffff;
-    position: absolute;
-    right:calc(0% + 10px );
-    top:calc(100% + 22px);
-    border:1px solid #000;
-    color:#000;
-    
+.change-lang{
+    display: flex;
 }
-.change-two-language{
-    padding: 5px 16px;    
+.change-language{
     font-size:18px;
     text-align: center;
-    transform-origin: top bottom;
-    animation: headerNotice ease 0.2s;
 }
-.change-two-language-underboder{
-    border-bottom: 1px solid #b6b9c0 ;
-}
-.change-two-language:hover {
+.change-lang:hover{
     color:#fc7321;
     cursor: pointer;
+
 }
+
 /* keyframe */
 @keyframes headerNotice{
     from{
