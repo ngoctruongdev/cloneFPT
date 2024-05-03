@@ -9,7 +9,8 @@ import {HttpClientModule, HttpClient} from '@angular/common/http';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { provideHttpClient, withFetch } from '@angular/common/http';
-
+import { BannerComponent } from './banner/banner.component';
+import {NgxWebstorageModule} from 'ngx-webstorage';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -20,6 +21,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HeaderComponent,
+    BannerComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     },
       defaultLanguage: 'en'
     }),
+    NgxWebstorageModule.forRoot(),
   ],
   providers: [
     provideClientHydration(),

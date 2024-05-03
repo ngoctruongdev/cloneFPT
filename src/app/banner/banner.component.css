@@ -1,0 +1,137 @@
+.siler{
+    position: relative;
+}
+.background-slider{
+    background-image: url(https://fpt.com/-/media/project/fpt-corporation/fpt/home/banner/common/image/nen-banner-slide_2.jpg),url(https://fpt.com/-/media/project/fpt-corporation/fpt/news/2024/04/fpt-dai-hoi-dong-co-dong-2024_01.jpg);
+    background-repeat: no-repeat;
+    width:100%;
+    height:483px;
+    position: relative;
+}
+.divslider{
+    position: absolute;
+    width:800px;
+    height:361px;
+    top:calc(0% + 42px);
+    left:calc(0% + 116px);
+    overflow: hidden;
+}
+.slidercontainer{
+    width:100%;
+    height:361px;
+    display: flex;
+}
+.imgslider{
+    width:800px;
+    height:361px;
+}
+.slidercontainer a:nth-child(2) img:nth-child(2){
+    transform: translateX(100%);
+}
+.slidercontainer a:nth-child(3) img:nth-child(3){
+    transform: translateX(200%);
+}
+.slidercontainer a:nth-child(4) img:nth-child(4){
+    transform: translateX(300%);
+}
+/* Đoạm văn slider */
+.paracontainer{
+    width:501px;
+    height:340px;
+    position: absolute;
+    top:calc(0% + 103px);
+    right:calc(0% + 114px);
+    background-color: #fff;
+    padding: 48px 0 48px 0px;
+    overflow: hidden;
+}
+.paragrab{
+    width:501px;
+    display: flex;
+}
+.paragrabdetails{
+    width: 100%;
+    height:340px;
+}
+.paralisst{
+    height: 174px;
+}
+.headerintroduction{
+    font-size:20px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 20px;
+    width:501px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+.paragrabintroduction{
+    width:501px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+.btnpara{
+    padding-left: 48px;
+    padding-right: 48px; 
+}
+.btn{
+    width:121px;
+    height:42px;
+    color:#fff;
+    background-color: #fc7321;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.btn:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+.arrowleft{
+    font-size:44px;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:calc(0% + 40px);
+    z-index: 1;
+}
+.arrowright{
+    font-size:44px;
+    color:#fff;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:calc(0% + 40px);
+    z-index: 1;
+}
+.infostock{
+    width:44px;
+    height:44px;
+    position: absolute;
+    right:0;
+    border-radius: 4px;
+     color:#fc7321;
+    background-color: #fff;
+    top:calc(0% + 102px);
+    font-weight: 400;
+}
+.social-network{
+    height:164px;
+    width:44px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    right: 0;
+    top:calc(0% + 168px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 26px;
+}
+.social-network a i{
+    color:#333;
+}
+.nav-connect-show{
+    z-index: 2;
+}

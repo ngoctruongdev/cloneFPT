@@ -1,6 +1,8 @@
 import { Component, Input, input,OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -19,9 +21,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  changelang(lang:any,){
+  changelang(lang:any){
     const selectLanguage = lang.target.value;
-    this._translate.use(selectLanguage)
+    const setValueLocal = localStorage.setItem('chanlang',selectLanguage);
+    const getValueLocal = localStorage.getItem('chanlang') || 'vn';
+      this._translate.use(getValueLocal)
   }
 }
 

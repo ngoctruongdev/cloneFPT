@@ -8,7 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   constructor(translate: TranslateService) {
-      translate.setDefaultLang('vn') ;
+      translate.setDefaultLang('vn')  ;
       translate.use('vn');
   }
   title = 'FPT';

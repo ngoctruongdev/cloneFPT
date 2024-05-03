@@ -100,21 +100,26 @@
     display:block;
     transform-origin: calc(100% - 20px) left;
     animation: headerNotice ease 0.2s;
+    z-index: 2;
 }
 .single-nav-list-ecosystem:hover .nav-introduction{
     transform-origin: calc(100% - 20px) left;
     animation: headerNotice ease 0.2s;
     display:block;
+    z-index: 2;
 }
 .single-nav-list-invertor:hover .nav-introduction{
     transform-origin: calc(100% - 20px) left;
     animation: headerNotice ease 0.2s;
     display:block;
+    z-index: 2;
 }
 .single-nav-list-noti:hover .nav-introduction{
     transform-origin: calc(100% - 20px) left;
     animation: headerNotice ease 0.2s;
     display:block;
+    z-index: 2;
+
 }
 .nav-connect-show{
     width:600px;
