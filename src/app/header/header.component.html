@@ -1,11 +1,14 @@
 <div class="header">
     <div class="header-nav">
+        <div class="menu">
+            <i class='bx bx-menu'></i>
+        </div>
         <div class="nav-logo">
             <a class="nav-link" href="#">
-                <img src="https://fpt.com/-/media/project/fpt-corporation/fpt/common/images/navigation/logo/fpt-logo.svg" alt="">
+                <img class="nav-link-img" src="https://fpt.com/-/media/project/fpt-corporation/fpt/common/images/navigation/logo/fpt-logo.svg" alt="">
             </a>
         </div>
-        <ul class="nav-list">
+        <ul class="nav-list hide-on-mobile-tablet">
             <li class="single-nav-list single-nav-list-introduction">
                 <a class="nav-link" href="">{{'about'|translate}}</a>
                 <div class="nav-introduction">
@@ -60,11 +63,11 @@
             </li>
         </ul>
         <ul class="nav-connect">
-            <li (click)="toogleTag1()" class="nav-link nav-link-search" class="nav-list" >
-                <i class='nav-link-search bx bx-search'></i>
+            <li (click)="toogleTag1()" class="nav-link nav-link-search hide-on-mobile-tablet " class="nav-list" >
+                <i class='hide-on-mobile-tablet nav-link-search bx bx-search'></i>
             </li>
-            <div *ngIf="showMe" class="nav-connect-show">
-                <div class="nav-connect-hidden" >
+            <div *ngIf="showMe" class="nav-connect-show hide-on-mobile-tablet">
+                <div class="nav-connect-hidden hide-on-mobile-tablet" >
                     <i class='nav-link-search bx bx-search'></i>
                     <input class="input-search" type="text" placeholder="Nhập để tìm kiếm">
                 </div>
@@ -77,4 +80,5 @@
                 </select>
             </div>
         </ul>
+    </div>
 </div>

@@ -10,14 +10,19 @@ import { isPlatformBrowser } from '@angular/common';
 
 export class BannerComponent implements OnInit {
   private index:number = 0;
+  private index2:number = 0;
   private numiter:any;
+  private numiter2:any;
   private interVal:any;
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       const imgnum = document.querySelectorAll('.imgslider') 
+      const imgnum2=document.querySelectorAll('.imgslider2') 
+      this.numiter2 = imgnum2.length
       this.numiter = imgnum.length
       this.startInterval();
+      this.startInterval2();
     }
   }
   clickbtnright ():void{
@@ -52,6 +57,22 @@ export class BannerComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       this.interVal = setInterval(() => {
         this.clickbtnright();
+      }, 4000);  }
+  }
+  
+  private startInterval2(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.interVal = setInterval(() => {
+          let sliderContaner2 = document.querySelector('.slidercontainer2') as HTMLElement
+          const imgnum2 = document.querySelectorAll('.imgslider2');
+          let sliderparagrab = document.querySelector('.paragrab2') as HTMLElement
+          this.index2++
+          if(this.index2 > imgnum2.length -1 ){
+            this.index2 = 0;
+          }
+          let translateValue2 = `${this.index2 * -100}%`;
+          sliderparagrab.style.transform =`translateX(${translateValue2})`; 
+          sliderContaner2.style.transform = `translateX(${translateValue2})`;
       }, 4000);  }
   }
 }

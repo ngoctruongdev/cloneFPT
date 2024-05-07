@@ -1,0 +1,24 @@
+.achorfooter{
+    text-decoration: none;
+}
+.infofpt{
+    color:#333;
+    font-size:18px;
+    font-weight: 530;
+    margin-bottom: 10px;
+}
+.infofpt:hover{
+    text-decoration: underline;
+}
+.infolist{
+    list-style: none;
+    padding-left: 0;
+}
+.infolist--details{
+    margin-bottom: 8px;
+    font-size: 14px;
+    color:#333;
+}
+.infolist--details:hover{
+    text-decoration: underline;
+}

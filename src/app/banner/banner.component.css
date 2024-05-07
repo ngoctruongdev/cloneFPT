@@ -1,5 +1,6 @@
 .siler{
     position: relative;
+    /* margin-top: 76px; */
 }
 .background-slider{
     background-image: url(https://fpt.com/-/media/project/fpt-corporation/fpt/home/banner/common/image/nen-banner-slide_2.jpg),url(https://fpt.com/-/media/project/fpt-corporation/fpt/news/2024/04/fpt-dai-hoi-dong-co-dong-2024_01.jpg);
@@ -20,6 +21,7 @@
     width:100%;
     height:361px;
     display: flex;
+    transition: all 1s ease;
 }
 .imgslider{
     width:800px;
@@ -52,9 +54,10 @@
 .paragrabdetails{
     width: 100%;
     height:340px;
+    transition: all 1s ease;
 }
 .paralisst{
-    height: 174px;
+    height: 195px;
 }
 .headerintroduction{
     font-size:20px;
@@ -107,31 +110,120 @@
 .infostock{
     width:44px;
     height:44px;
-    position: absolute;
-    right:0;
     border-radius: 4px;
      color:#fc7321;
     background-color: #fff;
-    top:calc(0% + 102px);
     font-weight: 400;
+    position: fixed;
+    top:calc(0% + 178px);
+    right:0;
+    z-index: 20;
+    border:1px solid #caced0;
+    border-right-color: transparent;
 }
 .social-network{
     height:164px;
     width:44px;
     background-color: #fff;
     border-radius: 4px;
-    position: absolute;
+    position: fixed;
     right: 0;
-    top:calc(0% + 168px);
+    top:calc(0% + 242px);
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: space-around;
     font-size: 26px;
+    border:1px solid #caced0;
+    border-right-color: transparent;
+    z-index: 20;
 }
 .social-network a i{
     color:#333;
 }
 .nav-connect-show{
     z-index: 2;
+}
+/* ------------------------------------------------------ */
+.divslider2{
+    width:1024px;
+    height:266px;
+    overflow: hidden;
+    display:none;
+}
+.slidercontainer2{
+    display:flex;
+    width:100%;
+    transition: all 1s ease;
+
+}
+.imgslider2{
+    width:1024px;
+    height:260px;
+    object-fit: cover;
+}
+.paracontainer2{
+    width:1024px;
+    height:200px;
+    background-color: #fff;
+    overflow: hidden;
+    display:none;
+}
+.paragrab2{
+    width:1024px;
+    display: flex;
+}
+.paragrabdetails2{
+    width: 1024px;
+    height:200px;
+    transition: all 1s ease;
+}
+.paralisst2{
+    width: 1024px;
+}
+/* ---------------------------------------------------- */
+
+/* respinsive banner */
+/* tablet and mobile */
+@media (max-width:1023px){
+    .hide-on-mobile-and-tablet{
+        display:none;
+    }
+    .divslider1{
+        width:100%;
+        height:260px;
+        display:flex;
+    }
+    .divslider2{
+        display:block;
+    }
+    .headerintroduction2{
+        font-size:26px;
+        font-weight: bold;
+        padding-right: 300px;
+        margin-bottom: 18px;
+    }
+    .paragrabintroduction2{
+        font-size:16px;
+        /* padding-right: 200px; */
+    }
+    .paracontainer2{
+        display:block;
+    }
+
+
+}
+/* Tablet */
+@media(min-width:740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display:none;
+    }
+}
+/* mobile */
+@media(max-width:739px){
+    .hide-on-mobile{
+        display:none;
+    }
+    
+
 }

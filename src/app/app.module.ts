@@ -11,6 +11,8 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { BannerComponent } from './banner/banner.component';
 import {NgxWebstorageModule} from 'ngx-webstorage';
+import { Section1Component } from './section1/section1.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -22,6 +24,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     HeaderComponent,
     BannerComponent,
+    Section1Component,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
